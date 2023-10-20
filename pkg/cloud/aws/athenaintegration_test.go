@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/tkennes/openghg/pkg/util/json"
-	"github.com/tkennes/openghgkg/util/timeutil"
+	"github.com/tkennes/openghg/pkg/util/timeutil"
 )
 
 func TestAthenaIntegration_GetCloudCost(t *testing.T) {

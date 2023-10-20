@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"github.com/tkennes/openghg/pkg/filter21/ast"
-	"github.com/tkennes/openghgkg/filter21/transform"
-	"github.com/tkennes/openghgkg/filter21/util"
+	"github.com/tkennes/openghg/pkg/filter21/transform"
+	"github.com/tkennes/openghg/pkg/filter21/util"
 )
 
 // FieldMapper is the adapter which can fetch actual T instance data of type U

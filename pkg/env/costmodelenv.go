@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/tkennes/openghg/pkg/log"
-	"github.com/tkennes/openghgkg/util/timeutil"
+	"github.com/tkennes/openghg/pkg/util/timeutil"
 )
 
 const (
@@ -15,9 +15,6 @@ const (
 	AWSAccessKeySecretEnvVar = "AWS_SECRET_ACCESS_KEY"
 	AWSClusterIDEnvVar       = "AWS_CLUSTER_ID"
 	AWSPricingURL            = "AWS_PRICING_URL"
-
-	AlibabaAccessKeyIDEnvVar     = "ALIBABA_ACCESS_KEY_ID"
-	AlibabaAccessKeySecretEnvVar = "ALIBABA_SECRET_ACCESS_KEY"
 
 	AzureOfferIDEnvVar        = "AZURE_OFFER_ID"
 	AzureBillingAccountEnvVar = "AZURE_BILLING_ACCOUNT"
@@ -255,18 +252,6 @@ func GetAWSClusterID() string {
 // GetAWSPricingURL returns an optional alternative URL to fetch AWS pricing data from; for use in airgapped environments
 func GetAWSPricingURL() string {
 	return Get(AWSPricingURL, "")
-}
-
-// GetAlibabaAccessKeyID returns the environment variable value for AlibabaAccessKeyIDEnvVar which represents
-// the Alibaba access key for authentication
-func GetAlibabaAccessKeyID() string {
-	return Get(AlibabaAccessKeyIDEnvVar, "")
-}
-
-// GetAlibabaAccessKeySecret returns the environment variable value for AlibabaAccessKeySecretEnvVar which represents
-// the Alibaba access key secret for authentication
-func GetAlibabaAccessKeySecret() string {
-	return Get(AlibabaAccessKeySecretEnvVar, "")
 }
 
 // GetAzureOfferID returns the environment variable value for AzureOfferIDEnvVar which represents

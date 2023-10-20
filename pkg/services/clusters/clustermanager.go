@@ -9,8 +9,8 @@ import (
 	"github.com/google/uuid"
 
 	"github.com/tkennes/openghg/pkg/log"
-	"github.com/tkennes/openghgkg/util/fileutil"
-	"github.com/tkennes/openghgkg/util/json"
+	"github.com/tkennes/openghg/pkg/util/fileutil"
+	"github.com/tkennes/openghg/pkg/util/json"
 
 	"sigs.k8s.io/yaml"
 )

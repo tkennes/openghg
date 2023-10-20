@@ -12,7 +12,7 @@ import (
 
 	"github.com/tkennes/openghg/pkg/util/timeutil"
 
-	"github.com/tkennes/openghgkg/env"
+	"github.com/tkennes/openghg/pkg/env"
 )
 
 func TestRoundBack(t *testing.T) {

@@ -11,7 +11,7 @@ import (
 	"time"
 
 	"github.com/tkennes/openghg/pkg/env"
-	"github.com/tkennes/openghgkg/prom"
+	"github.com/tkennes/openghg/pkg/prom"
 
 	prometheus "github.com/prometheus/client_golang/api"
 )

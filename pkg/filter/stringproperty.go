@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/opencost/opencost/pkg/log"
+	"github.com/tkennes/openghg/pkg/log"
 )
 
 // StringPropertied is used to validate the name of a property field and return its value

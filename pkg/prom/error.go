@@ -6,7 +6,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/opencost/opencost/pkg/log"
+	"github.com/tkennes/openghg/pkg/log"
 )
 
 // errorType used to check HasError

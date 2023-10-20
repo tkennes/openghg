@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/opencost/opencost/pkg/util/timeutil"
+	"github.com/tkennes/openghg/pkg/util/timeutil"
 )
 
 //--------------------------------------------------------------------------

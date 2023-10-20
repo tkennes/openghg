@@ -4,7 +4,7 @@ import (
 	"path"
 
 	"github.com/tkennes/openghg/pkg/env"
-	"github.com/tkennes/openghgkg/services/clusters"
+	"github.com/tkennes/openghg/pkg/services/clusters"
 )
 
 // NewClusterManagerService creates a new HTTPService implementation driving cluster definition management

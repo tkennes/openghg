@@ -4,8 +4,8 @@ import (
 	"reflect"
 
 	"github.com/tkennes/openghg/pkg/kubecost"
-	"github.com/tkennes/openghgkg/log"
-	"github.com/tkennes/openghgkg/util/mapper"
+	"github.com/tkennes/openghg/pkg/log"
+	"github.com/tkennes/openghg/pkg/util/mapper"
 )
 
 func ConvertFilterQueryParams(qp mapper.PrimitiveMapReader, labelConfig *kubecost.LabelConfig) AllocationFilterV1 {

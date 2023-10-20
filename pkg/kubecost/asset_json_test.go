@@ -1,7 +1,7 @@
 package kubecost
 
 import (
-	"github.com/opencost/opencost/pkg/util/json"
+	"github.com/tkennes/openghg/pkg/util/json"
 
 	"testing"
 	"time"

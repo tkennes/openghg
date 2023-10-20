@@ -3,7 +3,7 @@ package prom
 import (
 	"fmt"
 
-	"github.com/opencost/opencost/pkg/env"
+	"github.com/tkennes/openghg/pkg/env"
 
 	prometheus "github.com/prometheus/client_golang/api"
 )

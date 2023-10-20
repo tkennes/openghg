@@ -3,7 +3,7 @@ package interval
 import (
 	"time"
 
-	"github.com/opencost/opencost/pkg/util/atomic"
+	"github.com/tkennes/openghg/pkg/util/atomic"
 )
 
 // IntervalRunner is an example implementation of AtomicRunState.

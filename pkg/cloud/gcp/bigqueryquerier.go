@@ -5,7 +5,7 @@ import (
 
 	"cloud.google.com/go/bigquery"
 	"github.com/tkennes/openghg/pkg/cloud"
-	cloudconfig "github.com/tkennes/openghgkg/cloud/config"
+	cloudconfig "github.com/tkennes/openghg/pkg/cloud/config"
 )
 
 type BigQueryQuerier struct {

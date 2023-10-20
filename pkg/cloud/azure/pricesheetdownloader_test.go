@@ -7,8 +7,8 @@ import (
 	"testing"
 
 	"github.com/Azure/azure-sdk-for-go/profiles/2020-09-01/commerce/mgmt/commerce"
-	"github.com/opencost/opencost/pkg/cloud/models"
 	"github.com/stretchr/testify/require"
+	"github.com/tkennes/openghg/pkg/cloud/models"
 )
 
 func TestDownloader(t *testing.T) {

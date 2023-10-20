@@ -3,7 +3,7 @@ package kubecost
 import (
 	"time"
 
-	"github.com/opencost/opencost/pkg/util/formatutil"
+	"github.com/tkennes/openghg/pkg/util/formatutil"
 )
 
 // SummaryAllocationResponse is a sanitized version of SummaryAllocation, which

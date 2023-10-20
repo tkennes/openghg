@@ -9,9 +9,9 @@ import (
 
 	"github.com/aws/aws-sdk-go-v2/service/athena/types"
 	"github.com/tkennes/openghg/pkg/cloud"
-	"github.com/tkennes/openghgkg/kubecost"
-	"github.com/tkennes/openghgkg/log"
-	"github.com/tkennes/openghgkg/util/timeutil"
+	"github.com/tkennes/openghg/pkg/kubecost"
+	"github.com/tkennes/openghg/pkg/log"
+	"github.com/tkennes/openghg/pkg/util/timeutil"
 )
 
 const LabelColumnPrefix = "resource_tags_user_"

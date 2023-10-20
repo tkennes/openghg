@@ -5,8 +5,8 @@ import (
 	"testing"
 
 	"github.com/tkennes/openghg/pkg/cloud/config"
-	"github.com/tkennes/openghgkg/log"
-	"github.com/tkennes/openghgkg/util/json"
+	"github.com/tkennes/openghg/pkg/log"
+	"github.com/tkennes/openghg/pkg/util/json"
 )
 
 func TestAthenaConfiguration_Validate(t *testing.T) {

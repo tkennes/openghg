@@ -6,9 +6,9 @@ ui/.parcel-cache
 ui/.cache
 ui/dist
 ui/node_modules/
-cmd/costmodel/costmodel
-cmd/costmodel/costmodel-amd64
-cmd/costmodel/costmodel-arm64
+cmd/ghgmodel/ghgmodel
+cmd/ghgmodel/ghgmodel-amd64
+cmd/ghgmodel/ghgmodel-arm64
 pkg/cloud/azureorphan_test.go
 
 # VS Code

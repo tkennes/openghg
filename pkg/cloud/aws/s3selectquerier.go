@@ -13,8 +13,8 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/s3"
 	s3Types "github.com/aws/aws-sdk-go-v2/service/s3/types"
 	"github.com/tkennes/openghg/pkg/cloud"
-	"github.com/tkennes/openghgkg/cloud/config"
-	"github.com/tkennes/openghgkg/util/stringutil"
+	"github.com/tkennes/openghg/pkg/cloud/config"
+	"github.com/tkennes/openghg/pkg/util/stringutil"
 )
 
 type S3SelectQuerier struct {

@@ -10,8 +10,8 @@ import (
 
 	"cloud.google.com/go/bigquery"
 	"github.com/tkennes/openghg/pkg/kubecost"
-	"github.com/tkennes/openghgkg/log"
-	"github.com/tkennes/openghgkg/util/timeutil"
+	"github.com/tkennes/openghg/pkg/log"
+	"github.com/tkennes/openghg/pkg/util/timeutil"
 	"google.golang.org/api/iterator"
 )
 

@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/tkennes/openghg/pkg/kubecost"
-	"github.com/tkennes/openghgkg/util/timeutil"
+	"github.com/tkennes/openghg/pkg/util/timeutil"
 )
 
 func TestBigQueryIntegration_GetCloudCost(t *testing.T) {

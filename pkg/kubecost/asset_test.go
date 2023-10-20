@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/opencost/opencost/pkg/util"
+	"github.com/tkennes/openghg/pkg/util"
 )
 
 var start1 = time.Date(2020, time.January, 1, 0, 0, 0, 0, time.UTC)

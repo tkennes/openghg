@@ -6,9 +6,9 @@ import (
 	"testing"
 
 	"github.com/tkennes/openghg/pkg/filter21/allocation"
-	"github.com/tkennes/openghgkg/filter21/ast"
-	"github.com/tkennes/openghgkg/filter21/matcher"
-	"github.com/tkennes/openghgkg/filter21/transform"
+	"github.com/tkennes/openghg/pkg/filter21/ast"
+	"github.com/tkennes/openghg/pkg/filter21/matcher"
+	"github.com/tkennes/openghg/pkg/filter21/transform"
 )
 
 // MatcherCompiler for Allocation instances providing functions which map identifers

@@ -8,11 +8,11 @@ import (
 	"time"
 
 	filter21 "github.com/tkennes/openghg/pkg/filter21"
-	"github.com/tkennes/openghgkg/filter21/ast"
-	"github.com/tkennes/openghgkg/filter21/matcher"
-	"github.com/tkennes/openghgkg/log"
-	"github.com/tkennes/openghgkg/util"
-	"github.com/tkennes/openghgkg/util/timeutil"
+	"github.com/tkennes/openghg/pkg/filter21/ast"
+	"github.com/tkennes/openghg/pkg/filter21/matcher"
+	"github.com/tkennes/openghg/pkg/log"
+	"github.com/tkennes/openghg/pkg/util"
+	"github.com/tkennes/openghg/pkg/util/timeutil"
 	"golang.org/x/exp/slices"
 )
 

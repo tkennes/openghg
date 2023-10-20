@@ -6,7 +6,7 @@ import (
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/service/s3"
 	"github.com/tkennes/openghg/pkg/cloud"
-	"github.com/tkennes/openghgkg/cloud/config"
+	"github.com/tkennes/openghg/pkg/cloud/config"
 )
 
 type S3Connection struct {

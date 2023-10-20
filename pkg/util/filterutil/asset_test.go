@@ -3,9 +3,9 @@ package filterutil
 import (
 	"testing"
 
-	"github.com/tkennes/openghg/pkg/costmodel/clusters"
-	"github.com/tkennes/openghgkg/kubecost"
-	"github.com/tkennes/openghgkg/util/mapper"
+	"github.com/tkennes/openghg/pkg/ghgmodel/clusters"
+	"github.com/tkennes/openghg/pkg/kubecost"
+	"github.com/tkennes/openghg/pkg/util/mapper"
 )
 
 var assetCompiler = kubecost.NewAssetMatchCompiler()

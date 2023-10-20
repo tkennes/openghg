@@ -1,6 +1,6 @@
 package transform
 
-import "github.com/opencost/opencost/pkg/filter21/ast"
+import "github.com/tkennes/openghg/pkg/filter21/ast"
 
 const unallocatedSuffix = "__unallocated__"
 

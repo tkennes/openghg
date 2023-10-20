@@ -3,7 +3,7 @@ package config
 import (
 	"fmt"
 
-	"github.com/opencost/opencost/pkg/util/json"
+	"github.com/tkennes/openghg/pkg/util/json"
 )
 
 // AuthorizerTypeProperty is the property where the id of an Authorizer should be placed in its custom MarshalJSON function

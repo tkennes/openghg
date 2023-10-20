@@ -6,7 +6,7 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/opencost/opencost/pkg/util/defaults"
+	"github.com/tkennes/openghg/pkg/util/defaults"
 )
 
 // RetryCancellationErr is the error type that's returned if the retry is cancelled

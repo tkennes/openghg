@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/tkennes/openghg/pkg/prom"
-	"github.com/tkennes/openghgkg/util/cloudutil"
+	"github.com/tkennes/openghg/pkg/util/cloudutil"
 )
 
 // LabelConfig is a port of type AnalyzerConfig. We need to be more thoughtful

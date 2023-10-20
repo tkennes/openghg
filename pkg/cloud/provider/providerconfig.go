@@ -8,11 +8,11 @@ import (
 	"sync"
 
 	"github.com/tkennes/openghg/pkg/cloud/models"
-	"github.com/tkennes/openghgkg/cloud/utils"
-	"github.com/tkennes/openghgkg/config"
-	"github.com/tkennes/openghgkg/env"
-	"github.com/tkennes/openghgkg/log"
-	"github.com/tkennes/openghgkg/util/json"
+	"github.com/tkennes/openghg/pkg/cloud/utils"
+	"github.com/tkennes/openghg/pkg/config"
+	"github.com/tkennes/openghg/pkg/env"
+	"github.com/tkennes/openghg/pkg/log"
+	"github.com/tkennes/openghg/pkg/util/json"
 )
 
 const closedSourceConfigMount = "models/"
@@ -276,7 +276,7 @@ func filenameInConfigPath(fqfn string) string {
 // before defaulting it with the above function DefaultPricing
 func ReturnPricingFromConfigs(filename string) (*models.CustomPricing, error) {
 	if _, err := os.Stat(closedSourceConfigMount); os.IsNotExist(err) {
-		return &models.CustomPricing{}, fmt.Errorf("ReturnPricingFromConfigs: %s likely running in provider config in opencost itself with err: %v", closedSourceConfigMount, err)
+		return &models.CustomPricing{}, fmt.Errorf("ReturnPricingFromConfigs: %s likely running in provider config in openghg itself with err: %v", closedSourceConfigMount, err)
 	}
 	providerConfigFile := gopath.Join(closedSourceConfigMount, filename)
 	if _, err := os.Stat(providerConfigFile); err != nil {

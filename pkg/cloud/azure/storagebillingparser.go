@@ -11,8 +11,8 @@ import (
 
 	"github.com/Azure/azure-storage-blob-go/azblob"
 	"github.com/tkennes/openghg/pkg/cloud"
-	cloudconfig "github.com/tkennes/openghgkg/cloud/config"
-	"github.com/tkennes/openghgkg/log"
+	cloudconfig "github.com/tkennes/openghg/pkg/cloud/config"
+	"github.com/tkennes/openghg/pkg/log"
 )
 
 // AzureStorageBillingParser accesses billing data stored in CSV files in Azure Storage

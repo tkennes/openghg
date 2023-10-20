@@ -6,8 +6,8 @@ import (
 	gopath "path"
 	"path/filepath"
 
-	"github.com/opencost/opencost/pkg/util/fileutil"
 	"github.com/pkg/errors"
+	"github.com/tkennes/openghg/pkg/util/fileutil"
 )
 
 // FileStorage leverages the file system to write data to disk.

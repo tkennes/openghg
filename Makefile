@@ -12,4 +12,4 @@ GO_FLAGS     := -ldflags "-extldflags \"-static\" -s -w $(GO_LDFLAGS)"
 
 .PHONY: go/bin
 go/bin:
-	CGO_ENABLED=0 $(GO) build $(GO_FLAGS) ./cmd/costmodel
+	CGO_ENABLED=0 $(GO) build $(GO_FLAGS) ./cmd/ghgmodel

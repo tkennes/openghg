@@ -3,7 +3,7 @@ package storage
 import (
 	"strings"
 
-	"github.com/opencost/opencost/pkg/util/json"
+	"github.com/tkennes/openghg/pkg/util/json"
 )
 
 /*

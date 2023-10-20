@@ -8,17 +8,17 @@ import (
 	"time"
 
 	"github.com/tkennes/openghg/pkg/cloud/provider"
-	"github.com/tkennes/openghgkg/clustercache"
-	"github.com/tkennes/openghgkg/config"
-	"github.com/tkennes/openghgkg/costmodel"
-	"github.com/tkennes/openghgkg/costmodel/clusters"
-	"github.com/tkennes/openghgkg/env"
-	"github.com/tkennes/openghgkg/kubeconfig"
-	"github.com/tkennes/openghgkg/log"
-	"github.com/tkennes/openghgkg/metrics"
-	"github.com/tkennes/openghgkg/prom"
-	"github.com/tkennes/openghgkg/util/watcher"
-	"github.com/tkennes/openghgkg/version"
+	"github.com/tkennes/openghg/pkg/clustercache"
+	"github.com/tkennes/openghg/pkg/config"
+	"github.com/tkennes/openghg/pkg/env"
+	"github.com/tkennes/openghg/pkg/ghgmodel"
+	"github.com/tkennes/openghg/pkg/ghgmodel/clusters"
+	"github.com/tkennes/openghg/pkg/kubeconfig"
+	"github.com/tkennes/openghg/pkg/log"
+	"github.com/tkennes/openghg/pkg/metrics"
+	"github.com/tkennes/openghg/pkg/prom"
+	"github.com/tkennes/openghg/pkg/util/watcher"
+	"github.com/tkennes/openghg/pkg/version"
 
 	prometheus "github.com/prometheus/client_golang/api"
 	prometheusAPI "github.com/prometheus/client_golang/api/prometheus/v1"
@@ -191,12 +191,12 @@ func Execute(opts *AgentOpts) error {
 	}
 
 	// ClusterInfo Provider to provide the cluster map with local and remote cluster data
-	localClusterInfo := costmodel.NewLocalClusterInfoProvider(k8sClient, cloudProvider)
+	localClusterInfo := ghgmodel.NewLocalClusterInfoProvider(k8sClient, cloudProvider)
 
 	var clusterInfoProvider clusters.ClusterInfoProvider
 	if env.IsExportClusterInfoEnabled() {
 		clusterInfoConf := confManager.ConfigFileAt(path.Join(configPrefix, "cluster-info.json"))
-		clusterInfoProvider = costmodel.NewClusterInfoWriteOnRequest(localClusterInfo, clusterInfoConf)
+		clusterInfoProvider = ghgmodel.NewClusterInfoWriteOnRequest(localClusterInfo, clusterInfoConf)
 	} else {
 		clusterInfoProvider = localClusterInfo
 	}
@@ -204,10 +204,10 @@ func Execute(opts *AgentOpts) error {
 	// Initialize ClusterMap for maintaining ClusterInfo by ClusterID
 	clusterMap := clusters.NewClusterMap(promCli, clusterInfoProvider, 5*time.Minute)
 
-	costModel := costmodel.NewCostModel(promCli, cloudProvider, clusterCache, clusterMap, scrapeInterval)
+	costModel := ghgmodel.NewCostModel(promCli, cloudProvider, clusterCache, clusterMap, scrapeInterval)
 
 	// initialize Kubernetes Metrics Emitter
-	metricsEmitter := costmodel.NewCostModelMetricsEmitter(promCli, clusterCache, cloudProvider, clusterInfoProvider, costModel)
+	metricsEmitter := ghgmodel.NewCostModelMetricsEmitter(promCli, clusterCache, cloudProvider, clusterInfoProvider, costModel)
 
 	// download pricing data
 	err = cloudProvider.DownloadPricingData()

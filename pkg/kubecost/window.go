@@ -10,9 +10,9 @@ import (
 	"time"
 
 	"github.com/tkennes/openghg/pkg/env"
-	"github.com/tkennes/openghgkg/log"
-	"github.com/tkennes/openghgkg/thanos"
-	"github.com/tkennes/openghgkg/util/timeutil"
+	"github.com/tkennes/openghg/pkg/log"
+	"github.com/tkennes/openghg/pkg/thanos"
+	"github.com/tkennes/openghg/pkg/util/timeutil"
 )
 
 const (

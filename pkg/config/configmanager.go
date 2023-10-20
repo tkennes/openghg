@@ -5,7 +5,7 @@ import (
 	"sync"
 
 	"github.com/tkennes/openghg/pkg/log"
-	"github.com/tkennes/openghgkg/storage"
+	"github.com/tkennes/openghg/pkg/storage"
 )
 
 //--------------------------------------------------------------------------

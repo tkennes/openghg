@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/opencost/opencost/pkg/util/mathutil"
+	"github.com/tkennes/openghg/pkg/util/mathutil"
 )
 
 func TestAllocation_MarshalJSON(t *testing.T) {

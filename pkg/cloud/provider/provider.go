@@ -8,24 +8,23 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tkennes/openghg/pkg/cloud/alibaba"
-	"github.com/tkennes/openghgkg/cloud/aws"
-	"github.com/tkennes/openghgkg/cloud/azure"
-	"github.com/tkennes/openghgkg/cloud/gcp"
-	"github.com/tkennes/openghgkg/cloud/models"
-	"github.com/tkennes/openghgkg/cloud/scaleway"
-	"github.com/tkennes/openghgkg/kubecost"
+	"github.com/tkennes/openghg/pkg/cloud/aws"
+	"github.com/tkennes/openghg/pkg/cloud/azure"
+	"github.com/tkennes/openghg/pkg/cloud/gcp"
+	"github.com/tkennes/openghg/pkg/cloud/models"
+	"github.com/tkennes/openghg/pkg/cloud/scaleway"
+	"github.com/tkennes/openghg/pkg/kubecost"
 
-	"github.com/tkennes/openghgkg/util"
+	"github.com/tkennes/openghg/pkg/util"
 
 	"cloud.google.com/go/compute/metadata"
 
-	"github.com/tkennes/openghgkg/clustercache"
-	"github.com/tkennes/openghgkg/config"
-	"github.com/tkennes/openghgkg/env"
-	"github.com/tkennes/openghgkg/log"
-	"github.com/tkennes/openghgkg/util/httputil"
-	"github.com/tkennes/openghgkg/util/watcher"
+	"github.com/tkennes/openghg/pkg/clustercache"
+	"github.com/tkennes/openghg/pkg/config"
+	"github.com/tkennes/openghg/pkg/env"
+	"github.com/tkennes/openghg/pkg/log"
+	"github.com/tkennes/openghg/pkg/util/httputil"
+	"github.com/tkennes/openghg/pkg/util/watcher"
 
 	v1 "k8s.io/api/core/v1"
 )
@@ -222,15 +221,6 @@ func NewProvider(cache clustercache.ClusterCache, apiKey string, config *config.
 			ClusterAccountID:     cp.accountID,
 			ServiceAccountChecks: models.NewServiceAccountChecks(),
 		}, nil
-	case kubecost.AlibabaProvider:
-		log.Info("Found ProviderID starting with \"alibaba\", using Alibaba Cloud Provider")
-		return &alibaba.Alibaba{
-			Clientset:            cache,
-			Config:               NewProviderConfig(config, cp.configFileName),
-			ClusterRegion:        cp.region,
-			ClusterAccountId:     cp.accountID,
-			ServiceAccountChecks: models.NewServiceAccountChecks(),
-		}, nil
 	case kubecost.ScalewayProvider:
 		log.Info("Found ProviderID starting with \"scaleway\", using Scaleway Provider")
 		return &scaleway.Scaleway{
@@ -269,7 +259,7 @@ func getClusterProperties(node *v1.Node) clusterProperties {
 		accountID:      "",
 		projectID:      "",
 	}
-	// The second conditional is mainly if you're running opencost outside of GCE, say in a local environment.
+	// The second conditional is mainly if you're running openGHG outside of GCE, say in a local environment.
 	if metadata.OnGCE() || strings.HasPrefix(providerID, "gce") {
 		cp.provider = kubecost.GCPProvider
 		cp.configFileName = "gcp.json"
@@ -284,9 +274,6 @@ func getClusterProperties(node *v1.Node) clusterProperties {
 	} else if strings.HasPrefix(providerID, "scaleway") { // the scaleway provider ID looks like scaleway://instance/<instance_id>
 		cp.provider = kubecost.ScalewayProvider
 		cp.configFileName = "scaleway.json"
-	} else if strings.Contains(node.Status.NodeInfo.KubeletVersion, "aliyun") { // provider ID is not prefix with any distinct keyword like other providers
-		cp.provider = kubecost.AlibabaProvider
-		cp.configFileName = "alibaba.json"
 	}
 	if env.IsUseCSVProvider() {
 		cp.provider = kubecost.CSVProvider

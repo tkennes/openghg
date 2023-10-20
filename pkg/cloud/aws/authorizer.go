@@ -9,7 +9,7 @@ import (
 	"github.com/aws/aws-sdk-go-v2/credentials/stscreds"
 	"github.com/aws/aws-sdk-go-v2/service/sts"
 	"github.com/tkennes/openghg/pkg/cloud/config"
-	"github.com/tkennes/openghgkg/util/json"
+	"github.com/tkennes/openghg/pkg/util/json"
 )
 
 const AccessKeyAuthorizerType = "AWSAccessKey"

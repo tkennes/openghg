@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/tkennes/openghg/pkg/filter"
-	"github.com/tkennes/openghgkg/kubecost"
+	"github.com/tkennes/openghg/pkg/kubecost"
 )
 
 func Test_String_Matches(t *testing.T) {

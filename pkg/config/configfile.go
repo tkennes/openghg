@@ -9,8 +9,8 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/tkennes/openghg/pkg/log"
-	"github.com/tkennes/openghgkg/storage"
-	"github.com/tkennes/openghgkg/util/atomic"
+	"github.com/tkennes/openghg/pkg/storage"
+	"github.com/tkennes/openghg/pkg/util/atomic"
 )
 
 // HandlerID is a unique identifier assigned to a provided ConfigChangedHandler. This is used to remove a handler

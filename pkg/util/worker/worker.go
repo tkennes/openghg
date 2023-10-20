@@ -6,7 +6,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/opencost/opencost/pkg/collections"
+	"github.com/tkennes/openghg/pkg/collections"
 )
 
 // Worker is a transformation function from input type T to output type U.

@@ -8,7 +8,7 @@ import (
 	"github.com/julienschmidt/httprouter"
 
 	"github.com/tkennes/openghg/pkg/log"
-	"github.com/tkennes/openghgkg/util/json"
+	"github.com/tkennes/openghg/pkg/util/json"
 )
 
 // DataEnvelope is a generic wrapper struct for http response data

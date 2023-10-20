@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/opencost/opencost/pkg/util/json"
+	"github.com/tkennes/openghg/pkg/util/json"
 )
 
 // Encoding and decoding logic for Asset types

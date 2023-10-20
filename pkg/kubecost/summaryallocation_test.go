@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/opencost/opencost/pkg/util"
+	"github.com/tkennes/openghg/pkg/util"
 )
 
 func TestSummaryAllocation_Add(t *testing.T) {

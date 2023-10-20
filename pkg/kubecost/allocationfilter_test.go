@@ -4,9 +4,9 @@ import (
 	"testing"
 
 	filter21 "github.com/tkennes/openghg/pkg/filter21"
-	afilter "github.com/tkennes/openghgkg/filter21/allocation"
-	"github.com/tkennes/openghgkg/filter21/ast"
-	"github.com/tkennes/openghgkg/filter21/ops"
+	afilter "github.com/tkennes/openghg/pkg/filter21/allocation"
+	"github.com/tkennes/openghg/pkg/filter21/ast"
+	"github.com/tkennes/openghg/pkg/filter21/ops"
 )
 
 func Test_AllocationFilterCondition_Matches(t *testing.T) {

@@ -9,10 +9,10 @@ import (
 	"time"
 
 	"github.com/tkennes/openghg/pkg/cloud/provider"
-	"github.com/tkennes/openghgkg/clustercache"
-	"github.com/tkennes/openghgkg/config"
-	"github.com/tkennes/openghgkg/costmodel"
-	"github.com/tkennes/openghgkg/costmodel/clusters"
+	"github.com/tkennes/openghg/pkg/clustercache"
+	"github.com/tkennes/openghg/pkg/config"
+	"github.com/tkennes/openghg/pkg/costmodel"
+	"github.com/tkennes/openghg/pkg/ghgmodel/clusters"
 
 	appsv1 "k8s.io/api/apps/v1"
 	v1 "k8s.io/api/core/v1"

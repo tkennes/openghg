@@ -5,9 +5,9 @@ import (
 	"strings"
 
 	afilter "github.com/tkennes/openghg/pkg/filter21/asset"
-	"github.com/tkennes/openghgkg/filter21/ast"
-	"github.com/tkennes/openghgkg/filter21/matcher"
-	"github.com/tkennes/openghgkg/filter21/transform"
+	"github.com/tkennes/openghg/pkg/filter21/ast"
+	"github.com/tkennes/openghg/pkg/filter21/matcher"
+	"github.com/tkennes/openghg/pkg/filter21/transform"
 )
 
 // AssetMatcher is a matcher implementation for Asset instances,

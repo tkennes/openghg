@@ -1,6 +1,6 @@
 package allocation
 
-import "github.com/opencost/opencost/pkg/filter21/ast"
+import "github.com/tkennes/openghg/pkg/filter21/ast"
 
 // a slice of all the allocation field instances the lexer should recognize as
 // valid left-hand comparators

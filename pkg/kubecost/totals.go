@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/opencost/opencost/pkg/log"
 	"github.com/patrickmn/go-cache"
+	"github.com/tkennes/openghg/pkg/log"
 )
 
 type AllocationTotalsResult struct {

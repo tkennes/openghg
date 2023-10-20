@@ -3,7 +3,7 @@ package kubecost
 import (
 	"testing"
 
-	"github.com/opencost/opencost/pkg/util/cloudutil"
+	"github.com/tkennes/openghg/pkg/util/cloudutil"
 )
 
 func TestLabelConfig_Map(t *testing.T) {

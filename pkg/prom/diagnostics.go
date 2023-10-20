@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/tkennes/openghg/pkg/env"
-	"github.com/tkennes/openghgkg/log"
 	prometheus "github.com/prometheus/client_golang/api"
+	"github.com/tkennes/openghg/pkg/env"
+	"github.com/tkennes/openghg/pkg/log"
 )
 
 // Prometheus Metric Diagnostic IDs

@@ -8,7 +8,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/opencost/opencost/pkg/cloud/models"
+	"github.com/tkennes/openghg/pkg/cloud/models"
 	v1 "k8s.io/api/core/v1"
 )
 

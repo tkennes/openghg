@@ -5,7 +5,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/opencost/opencost/pkg/util/json"
+	"github.com/tkennes/openghg/pkg/util/json"
 )
 
 // AllocationJSON  exists because there are expected JSON response fields

@@ -5,8 +5,8 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	afilter "github.com/tkennes/openghg/pkg/filter21/allocation"
-	"github.com/tkennes/openghgkg/filter21/ast"
-	"github.com/tkennes/openghgkg/filter21/ops"
+	"github.com/tkennes/openghg/pkg/filter21/ast"
+	"github.com/tkennes/openghg/pkg/filter21/ops"
 )
 
 func TestAliasPass(t *testing.T) {

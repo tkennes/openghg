@@ -13,17 +13,17 @@ import (
 	"time"
 
 	"github.com/tkennes/openghg/pkg/collections"
-	"github.com/tkennes/openghgkg/log"
-	"github.com/tkennes/openghgkg/util/fileutil"
-	"github.com/tkennes/openghgkg/util/httputil"
-	"github.com/tkennes/openghgkg/version"
+	"github.com/tkennes/openghg/pkg/log"
+	"github.com/tkennes/openghg/pkg/util/fileutil"
+	"github.com/tkennes/openghg/pkg/util/httputil"
+	"github.com/tkennes/openghg/pkg/version"
 
 	golog "log"
 
 	prometheus "github.com/prometheus/client_golang/api"
 )
 
-var UserAgent = fmt.Sprintf("Opencost/%s", version.Version)
+var UserAgent = fmt.Sprintf("Openghg/%s", version.Version)
 
 //--------------------------------------------------------------------------
 //  QueryParamsDecorator

@@ -5,7 +5,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/opencost/opencost/pkg/filter21/util"
+	"github.com/tkennes/openghg/pkg/filter21/util"
 	"golang.org/x/text/cases"
 	"golang.org/x/text/language"
 )

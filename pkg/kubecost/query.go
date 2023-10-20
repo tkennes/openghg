@@ -3,7 +3,7 @@ package kubecost
 import (
 	"time"
 
-	filter21 "github.com/opencost/opencost/pkg/filter21"
+	filter21 "github.com/tkennes/openghg/pkg/filter21"
 )
 
 // Querier is an aggregate interface which has the ability to query each Kubecost store type

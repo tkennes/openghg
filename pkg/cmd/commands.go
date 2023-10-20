@@ -5,11 +5,11 @@ import (
 	"os"
 	"strings"
 
-	"github.com/tkennes/openghg/pkg/cmd/agent"
-	"github.com/tkennes/openghgkg/cmd/costmodel"
-	"github.com/tkennes/openghgkg/log"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
+	"github.com/tkennes/openghg/pkg/cmd/agent"
+	"github.com/tkennes/openghg/pkg/cmd/ghgmodel"
+	"github.com/tkennes/openghg/pkg/log"
 )
 
 const (
@@ -28,7 +28,7 @@ const (
 //
 // This function accepts a costModelCmd and agentCmd parameters to provide support for alternate
 // implementations for cost-model and/or agent. If the passed in costModelCmd and/or agentCmd are nil,
-// then the respective defaults from opencost will be used.
+// then the respective defaults from openghg will be used.
 //
 // Any additional commands passed in will be added to the root command.
 func Execute(costModelCmd *cobra.Command, cmds ...*cobra.Command) error {
@@ -96,7 +96,7 @@ func newRootCommand(costModelCmd *cobra.Command, cmds ...*cobra.Command) *cobra.
 
 // default open-source cost-model command
 func newCostModelCommand() *cobra.Command {
-	opts := &costmodel.CostModelOpts{}
+	opts := &ghgmodel.CostModelOpts{}
 
 	cmCmd := &cobra.Command{
 		Use:   CommandCostModel,
@@ -105,7 +105,7 @@ func newCostModelCommand() *cobra.Command {
 			// Init logging here so cobra/viper has processed the command line args and flags
 			// otherwise only envvars are available during init
 			log.InitLogging(true)
-			return costmodel.Execute(opts)
+			return ghgmodel.Execute(opts)
 		},
 	}
 

@@ -12,28 +12,28 @@ test:
 
 # Compile a local binary
 build-local:
-    cd ./cmd/costmodel && \
+    cd ./cmd/ghgmodel && \
         {{commonenv}} go build \
         -ldflags \
           "-X github.com/tkennes/openghg/pkg/version.Version={{version}} \
            -X github.com/tkennes/openghg/pkg/version.GitCommit={{commit}}" \
-        -o ./costmodel
+        -o ./ghgmodel
 
 # Build multiarch binaries
 build-binary VERSION=version:
-    cd ./cmd/costmodel && \
+    cd ./cmd/ghgmodel && \
         {{commonenv}} GOOS=linux GOARCH=amd64 go build \
         -ldflags \
           "-X github.com/tkennes/openghg/pkg/version.Version={{VERSION}} \
            -X github.com/tkennes/openghg/pkg/version.GitCommit={{commit}}" \
-        -o ./costmodel-amd64
+        -o ./ghgmodel-amd64
 
-    cd ./cmd/costmodel && \
+    cd ./cmd/ghgmodel && \
         {{commonenv}} GOOS=linux GOARCH=arm64 go build \
         -ldflags \
           "-X github.com/tkennes/openghg/pkg/version.Version={{VERSION}} \
            -X github.com/tkennes/openghg/pkg/version.GitCommit={{commit}}" \
-        -o ./costmodel-arm64
+        -o ./ghgmodel-arm64
 
 # Build and push a multi-arch Docker image
 build IMAGETAG VERSION=version: test (build-binary VERSION)
@@ -41,7 +41,7 @@ build IMAGETAG VERSION=version: test (build-binary VERSION)
         --rm \
         --platform "linux/amd64" \
         -f 'Dockerfile.cross' \
-        --build-arg binarypath=./cmd/costmodel/costmodel-amd64 \
+        --build-arg binarypath=./cmd/ghgmodel/ghgmodel-amd64 \
         --provenance=false \
         -t {{IMAGETAG}}-amd64 \
         --push \
@@ -51,7 +51,7 @@ build IMAGETAG VERSION=version: test (build-binary VERSION)
         --rm \
         --platform "linux/arm64" \
         -f 'Dockerfile.cross' \
-        --build-arg binarypath=./cmd/costmodel/costmodel-arm64 \
+        --build-arg binarypath=./cmd/ghgmodel/ghgmodel-arm64 \
         --provenance=false \
         -t {{IMAGETAG}}-arm64 \
         --push \

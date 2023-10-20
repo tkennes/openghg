@@ -22,7 +22,7 @@ COPY . .
 RUN set -e ;\
     go test ./test/*.go;\
     go test ./pkg/*;\
-    cd cmd/costmodel;\
+    cd cmd/ghgmodel;\
     GOOS=linux \
     go build -a -installsuffix cgo \
     -ldflags \
@@ -37,6 +37,5 @@ ADD --chmod=644 ./configs/default.json /models/default.json
 ADD --chmod=644 ./configs/azure.json /models/azure.json
 ADD --chmod=644 ./configs/aws.json /models/aws.json
 ADD --chmod=644 ./configs/gcp.json /models/gcp.json
-ADD --chmod=644 ./configs/alibaba.json /models/alibaba.json
 USER 1001
 ENTRYPOINT ["/go/bin/app"]

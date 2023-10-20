@@ -4,7 +4,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/opencost/opencost/pkg/util/mapper"
+	"github.com/tkennes/openghg/pkg/util/mapper"
 )
 
 //--------------------------------------------------------------------------

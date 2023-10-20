@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/Azure/azure-storage-blob-go/azblob"
-	"github.com/opencost/opencost/pkg/cloud/config"
+	"github.com/tkennes/openghg/pkg/cloud/config"
 )
 
 const AccessKeyAuthorizerType = "AzureAccessKey"

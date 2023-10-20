@@ -8,13 +8,13 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/tkennes/openghg/pkg/env"
-	"github.com/tkennes/openghgkg/errors"
-	"github.com/tkennes/openghgkg/log"
-	"github.com/tkennes/openghgkg/util/httputil"
-	"github.com/tkennes/openghgkg/util/json"
 	prometheus "github.com/prometheus/client_golang/api"
 	v1 "github.com/prometheus/client_golang/api/prometheus/v1"
+	"github.com/tkennes/openghg/pkg/env"
+	"github.com/tkennes/openghg/pkg/errors"
+	"github.com/tkennes/openghg/pkg/log"
+	"github.com/tkennes/openghg/pkg/util/httputil"
+	"github.com/tkennes/openghg/pkg/util/json"
 )
 
 const (

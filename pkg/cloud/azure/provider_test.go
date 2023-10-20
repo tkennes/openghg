@@ -9,7 +9,7 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/tkennes/openghg/pkg/cloud/models"
-	"github.com/tkennes/openghgkg/util/mathutil"
+	"github.com/tkennes/openghg/pkg/util/mathutil"
 )
 
 func TestParseAzureSubscriptionID(t *testing.T) {

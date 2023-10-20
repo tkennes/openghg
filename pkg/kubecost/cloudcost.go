@@ -6,9 +6,9 @@ import (
 	"time"
 
 	"github.com/tkennes/openghg/pkg/filter"
-	filter21 "github.com/tkennes/openghgkg/filter21"
-	"github.com/tkennes/openghgkg/filter21/ast"
-	"github.com/tkennes/openghgkg/log"
+	filter21 "github.com/tkennes/openghg/pkg/filter21"
+	"github.com/tkennes/openghg/pkg/filter21/ast"
+	"github.com/tkennes/openghg/pkg/log"
 )
 
 // CloudCost represents a CUR line item, identifying a cloud resource and

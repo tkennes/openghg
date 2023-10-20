@@ -2,7 +2,7 @@ package metrics
 
 import (
 	"github.com/tkennes/openghg/pkg/clustercache"
-	"github.com/tkennes/openghgkg/prom"
+	"github.com/tkennes/openghg/pkg/prom"
 
 	"github.com/prometheus/client_golang/prometheus"
 	dto "github.com/prometheus/client_model/go"

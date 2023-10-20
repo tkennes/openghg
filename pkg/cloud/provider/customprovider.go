@@ -9,13 +9,13 @@ import (
 	"time"
 
 	"github.com/tkennes/openghg/pkg/cloud/models"
-	"github.com/tkennes/openghgkg/cloud/utils"
-	"github.com/tkennes/openghgkg/clustercache"
-	"github.com/tkennes/openghgkg/env"
-	"github.com/tkennes/openghgkg/kubecost"
-	"github.com/tkennes/openghgkg/log"
-	"github.com/tkennes/openghgkg/util"
-	"github.com/tkennes/openghgkg/util/json"
+	"github.com/tkennes/openghg/pkg/cloud/utils"
+	"github.com/tkennes/openghg/pkg/clustercache"
+	"github.com/tkennes/openghg/pkg/env"
+	"github.com/tkennes/openghg/pkg/kubecost"
+	"github.com/tkennes/openghg/pkg/log"
+	"github.com/tkennes/openghg/pkg/util"
+	"github.com/tkennes/openghg/pkg/util/json"
 
 	v1 "k8s.io/api/core/v1"
 )

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/opencost/opencost/pkg/version"
+	"github.com/tkennes/openghg/pkg/version"
 
 	"github.com/kubecost/events"
 	"github.com/prometheus/client_golang/prometheus"
@@ -29,8 +29,8 @@ func InitKubecostTelemetry(config *MetricsConfig) {
 	once.Do(func() {
 		// register prometheus metrics
 		buildInfo = prometheus.NewGaugeVec(prometheus.GaugeOpts{
-			Name: "opencost_build_info",
-			Help: "opencost_build_info Build information",
+			Name: "openghg_build_info",
+			Help: "openghg_build_info Build information",
 		}, []string{"version", "revision"})
 
 		buildInfo.WithLabelValues(version.Version, version.GitCommit)

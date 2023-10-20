@@ -4,9 +4,9 @@ import (
 	"time"
 
 	"github.com/tkennes/openghg/pkg/config"
-	"github.com/tkennes/openghgkg/log"
-	"github.com/tkennes/openghgkg/util/atomic"
-	"github.com/tkennes/openghgkg/util/json"
+	"github.com/tkennes/openghg/pkg/log"
+	"github.com/tkennes/openghg/pkg/util/atomic"
+	"github.com/tkennes/openghg/pkg/util/json"
 
 	appsv1 "k8s.io/api/apps/v1"
 	batchv1 "k8s.io/api/batch/v1"

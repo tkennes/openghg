@@ -6,7 +6,7 @@ import (
 	"sync"
 
 	"github.com/tkennes/openghg/pkg/clustercache"
-	"github.com/tkennes/openghgkg/prom"
+	"github.com/tkennes/openghg/pkg/prom"
 
 	"github.com/prometheus/client_golang/prometheus"
 	batchv1 "k8s.io/api/batch/v1"

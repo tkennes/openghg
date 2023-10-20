@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/opencost/opencost/pkg/costmodel"
+	"github.com/tkennes/openghg/pkg/costmodel"
 )
 
 func TestKeyTupleSplit(t *testing.T) {

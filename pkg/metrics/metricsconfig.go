@@ -8,7 +8,7 @@ import (
 	"sync"
 
 	"github.com/tkennes/openghg/pkg/env"
-	"github.com/tkennes/openghgkg/util/watcher"
+	"github.com/tkennes/openghg/pkg/util/watcher"
 )
 
 var (

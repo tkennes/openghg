@@ -12,13 +12,13 @@ import (
 	"time"
 
 	"github.com/tkennes/openghg/pkg/cloud/models"
-	"github.com/tkennes/openghgkg/env"
-	"github.com/tkennes/openghgkg/util"
+	"github.com/tkennes/openghg/pkg/env"
+	"github.com/tkennes/openghg/pkg/util"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/s3"
-	"github.com/tkennes/openghgkg/log"
+	"github.com/tkennes/openghg/pkg/log"
 	v1 "k8s.io/api/core/v1"
 
 	"github.com/jszwec/csvutil"

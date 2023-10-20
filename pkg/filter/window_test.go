@@ -1,7 +1,7 @@
 package filter_test
 
 // import (
-// 	"github.com/opencost/opencost/pkg/kubecost"
+// 	"github.com/tkennes/openghg/pkg/kubecost"
 // 	"testing"
 // 	"time"
 // )

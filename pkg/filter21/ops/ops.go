@@ -10,9 +10,9 @@ import (
 	"strings"
 
 	"github.com/tkennes/openghg/pkg/filter21/allocation"
-	"github.com/tkennes/openghgkg/filter21/asset"
-	"github.com/tkennes/openghgkg/filter21/ast"
-	"github.com/tkennes/openghgkg/util/typeutil"
+	"github.com/tkennes/openghg/pkg/filter21/asset"
+	"github.com/tkennes/openghg/pkg/filter21/ast"
+	"github.com/tkennes/openghg/pkg/util/typeutil"
 )
 
 // keyFieldType is used to extract field, key, and field type

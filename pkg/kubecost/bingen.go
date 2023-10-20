@@ -71,4 +71,4 @@ package kubecost
 // @bingen:generate:CloudCostLabels
 // @bingen:end
 
-//go:generate bingen -package=kubecost -version=17 -buffer=github.com/opencost/opencost/pkg/util
+//go:generate bingen -package=kubecost -version=17 -buffer=github.com/tkennes/openghg/pkg/util

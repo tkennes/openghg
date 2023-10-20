@@ -5,8 +5,8 @@ import (
 	"time"
 
 	"github.com/tkennes/openghg/pkg/cloud"
-	"github.com/tkennes/openghgkg/kubecost"
-	"github.com/tkennes/openghgkg/util/timeutil"
+	"github.com/tkennes/openghg/pkg/kubecost"
+	"github.com/tkennes/openghg/pkg/util/timeutil"
 )
 
 type AzureStorageIntegration struct {

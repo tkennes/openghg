@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/tkennes/openghg/pkg/prom"
-	"github.com/tkennes/openghgkg/util/json"
+	"github.com/tkennes/openghg/pkg/util/json"
 )
 
 func TestClusterInfoLabels(t *testing.T) {

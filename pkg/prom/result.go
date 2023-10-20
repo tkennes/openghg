@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/tkennes/openghg/pkg/log"
-	"github.com/tkennes/openghgkg/util"
+	"github.com/tkennes/openghg/pkg/util"
 )
 
 var (

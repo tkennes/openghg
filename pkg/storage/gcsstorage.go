@@ -10,8 +10,8 @@ import (
 	"strings"
 
 	gcs "cloud.google.com/go/storage"
-	"github.com/opencost/opencost/pkg/log"
 	"github.com/pkg/errors"
+	"github.com/tkennes/openghg/pkg/log"
 	"golang.org/x/oauth2/google"
 	"google.golang.org/api/iterator"
 	"google.golang.org/api/option"

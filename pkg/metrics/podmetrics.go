@@ -3,11 +3,11 @@ package metrics
 import (
 	"fmt"
 
-	"github.com/tkennes/openghg/pkg/clustercache"
-	"github.com/tkennes/openghgkg/log"
-	"github.com/tkennes/openghgkg/prom"
 	"github.com/prometheus/client_golang/prometheus"
 	dto "github.com/prometheus/client_model/go"
+	"github.com/tkennes/openghg/pkg/clustercache"
+	"github.com/tkennes/openghg/pkg/log"
+	"github.com/tkennes/openghg/pkg/prom"
 	v1 "k8s.io/api/core/v1"
 )
 

@@ -133,9 +133,6 @@ const AzureProvider = "Azure"
 // describes how Azure labels nodepool nodes
 const AKSNodepoolLabel = "kubernetes.azure.com/agentpool"
 
-// AlibabaProvider describes the provider for Alibaba Cloud
-const AlibabaProvider = "Alibaba"
-
 // CSVProvider describes the provider a CSV
 const CSVProvider = "CSV"
 

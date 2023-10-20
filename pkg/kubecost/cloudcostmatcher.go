@@ -4,9 +4,9 @@ import (
 	"fmt"
 
 	"github.com/tkennes/openghg/pkg/filter21/ast"
-	ccfilter "github.com/tkennes/openghgkg/filter21/cloudcost"
-	"github.com/tkennes/openghgkg/filter21/matcher"
-	"github.com/tkennes/openghgkg/filter21/transform"
+	ccfilter "github.com/tkennes/openghg/pkg/filter21/cloudcost"
+	"github.com/tkennes/openghg/pkg/filter21/matcher"
+	"github.com/tkennes/openghg/pkg/filter21/transform"
 )
 
 // CloudCostMatcher is a matcher implementation for CloudCost instances,

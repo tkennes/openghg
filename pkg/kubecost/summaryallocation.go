@@ -8,9 +8,9 @@ import (
 	"time"
 
 	"github.com/tkennes/openghg/pkg/filter21/ast"
-	"github.com/tkennes/openghgkg/filter21/matcher"
-	"github.com/tkennes/openghgkg/log"
-	"github.com/tkennes/openghgkg/util/timeutil"
+	"github.com/tkennes/openghg/pkg/filter21/matcher"
+	"github.com/tkennes/openghg/pkg/log"
+	"github.com/tkennes/openghg/pkg/util/timeutil"
 )
 
 // SummaryAllocation summarizes an Allocation, keeping only fields necessary

@@ -13,7 +13,7 @@ package kubecost
 
 import (
 	"fmt"
-	util "github.com/opencost/opencost/pkg/util"
+	util "github.com/tkennes/openghg/pkg/util"
 	"reflect"
 	"strings"
 	"sync"

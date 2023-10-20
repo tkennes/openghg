@@ -13,7 +13,7 @@ import (
 	v1 "k8s.io/api/core/v1"
 
 	"github.com/tkennes/openghg/pkg/config"
-	"github.com/tkennes/openghgkg/log"
+	"github.com/tkennes/openghg/pkg/log"
 )
 
 var (
@@ -149,9 +149,6 @@ type CustomPricing struct {
 	GpuLabelValue                string `json:"gpuLabelValue,omitempty"`
 	ServiceKeyName               string `json:"awsServiceKeyName,omitempty"`
 	ServiceKeySecret             string `json:"awsServiceKeySecret,omitempty"`
-	AlibabaServiceKeyName        string `json:"alibabaServiceKeyName,omitempty"`
-	AlibabaServiceKeySecret      string `json:"alibabaServiceKeySecret,omitempty"`
-	AlibabaClusterRegion         string `json:"alibabaClusterRegion,omitempty"`
 	SpotDataRegion               string `json:"awsSpotDataRegion,omitempty"`
 	SpotDataBucket               string `json:"awsSpotDataBucket,omitempty"`
 	SpotDataPrefix               string `json:"awsSpotDataPrefix,omitempty"`

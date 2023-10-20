@@ -26,10 +26,10 @@ func TestUserAgentTransport(t *testing.T) {
 		expReq *http.Request
 	}{
 		{
-			name:   "opencost",
-			ua:     "opencost",
+			name:   "openghg",
+			ua:     "openghg",
 			req:    &http.Request{},
-			expReq: &http.Request{Header: http.Header{"User-Agent": []string{"opencost"}}},
+			expReq: &http.Request{Header: http.Header{"User-Agent": []string{"openghg"}}},
 		},
 		{
 			name:   "foo",
@@ -39,9 +39,9 @@ func TestUserAgentTransport(t *testing.T) {
 		},
 		{
 			name:   "overwrite user agent if exists",
-			ua:     "opencost",
+			ua:     "openghg",
 			req:    &http.Request{Header: http.Header{"User-Agent": []string{"foo"}}},
-			expReq: &http.Request{Header: http.Header{"User-Agent": []string{"opencost"}}},
+			expReq: &http.Request{Header: http.Header{"User-Agent": []string{"openghg"}}},
 		},
 	} {
 		t.Run(tc.name, func(t *testing.T) {

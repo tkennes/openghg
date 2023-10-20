@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/tkennes/openghg/pkg/cloud/config"
-	"github.com/tkennes/openghgkg/util/json"
+	"github.com/tkennes/openghg/pkg/util/json"
 )
 
 type StorageConfiguration struct {

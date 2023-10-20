@@ -25,7 +25,7 @@ const (
 	ParseError = "Parse Error"
 
 	// MissingData means that the Cloud Integration is properly configured, but the cloud provider is not returning
-	// billing/cost and usage data. This status is indicative of the billing/cost and usage data export of the Cloud Provider
+	// billing/ghg and usage data. This status is indicative of the billing/ghg and usage data export of the Cloud Provider
 	// being incorrectly set up or the export being set up in the last 48 hours and not having started populating data yet.
 	// This status is set when a query has been successfully made but the results come back empty. If the cloud provider,
 	// already has a SUCCESSFUL_CONNECTION status then this status should not be set, because this indicates that the specific

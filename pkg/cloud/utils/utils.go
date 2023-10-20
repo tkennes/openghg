@@ -7,7 +7,7 @@ import (
 	"golang.org/x/text/cases"
 	"golang.org/x/text/language"
 
-	"github.com/opencost/opencost/pkg/env"
+	"github.com/tkennes/openghg/pkg/env"
 )
 
 var ToTitle = cases.Title(language.Und, cases.NoLower)

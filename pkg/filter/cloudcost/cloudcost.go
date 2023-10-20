@@ -5,9 +5,9 @@ import (
 	"strings"
 
 	"github.com/tkennes/openghg/pkg/filter"
-	"github.com/tkennes/openghgkg/kubecost"
-	"github.com/tkennes/openghgkg/log"
-	"github.com/tkennes/openghgkg/util/mapper"
+	"github.com/tkennes/openghg/pkg/kubecost"
+	"github.com/tkennes/openghg/pkg/log"
+	"github.com/tkennes/openghg/pkg/util/mapper"
 )
 
 type CloudCostFilter struct {

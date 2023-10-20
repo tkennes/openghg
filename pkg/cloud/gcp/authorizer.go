@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/opencost/opencost/pkg/cloud/config"
+	"github.com/tkennes/openghg/pkg/cloud/config"
 	"google.golang.org/api/option"
 )
 

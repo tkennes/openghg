@@ -10,14 +10,14 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 	filter21 "github.com/tkennes/openghg/pkg/filter21"
-	"github.com/tkennes/openghgkg/filter21/allocation"
-	afilter "github.com/tkennes/openghgkg/filter21/allocation"
-	"github.com/tkennes/openghgkg/filter21/ast"
-	"github.com/tkennes/openghgkg/filter21/ops"
-	"github.com/tkennes/openghgkg/log"
-	"github.com/tkennes/openghgkg/util"
-	"github.com/tkennes/openghgkg/util/json"
-	"github.com/tkennes/openghgkg/util/timeutil"
+	"github.com/tkennes/openghg/pkg/filter21/allocation"
+	afilter "github.com/tkennes/openghg/pkg/filter21/allocation"
+	"github.com/tkennes/openghg/pkg/filter21/ast"
+	"github.com/tkennes/openghg/pkg/filter21/ops"
+	"github.com/tkennes/openghg/pkg/log"
+	"github.com/tkennes/openghg/pkg/util"
+	"github.com/tkennes/openghg/pkg/util/json"
+	"github.com/tkennes/openghg/pkg/util/timeutil"
 )
 
 var filterParser = afilter.NewAllocationFilterParser()

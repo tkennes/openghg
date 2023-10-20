@@ -3,7 +3,7 @@ package aws
 import (
 	"testing"
 
-	"github.com/opencost/opencost/pkg/cloud/config"
+	"github.com/tkennes/openghg/pkg/cloud/config"
 )
 
 func TestAuthorizerJSON_Sanitize(t *testing.T) {

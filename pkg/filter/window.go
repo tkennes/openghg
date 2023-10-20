@@ -4,7 +4,7 @@ package filter
 //import (
 //	"fmt"
 //	"github.com/tkennes/openghg/pkg/kubecost"
-//	"github.com/tkennes/openghgkg/log"
+//	"github.com/tkennes/openghg/pkg/log"
 //)
 //
 //type Windowed interface {

@@ -4,7 +4,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/opencost/opencost/pkg/filter21/ast"
+	"github.com/tkennes/openghg/pkg/filter21/ast"
 )
 
 func testingOnlyLess(left, right ast.FilterNode) bool {

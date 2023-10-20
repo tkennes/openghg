@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/hashicorp/go-multierror"
-	"github.com/opencost/opencost/pkg/filter21/ast"
+	"github.com/tkennes/openghg/pkg/filter21/ast"
 )
 
 var parser ast.FilterParser = NewAllocationFilterParser()
@@ -18,8 +18,8 @@ func TestParse(t *testing.T) {
 	}{
 		{
 			name: "Empty",
-			input: `              
-			
+			input: `
+
 			`,
 		},
 		{
@@ -97,7 +97,7 @@ func TestParse(t *testing.T) {
 				"job" +
 				container!:"123-abc_foo" +
 				pod!:"aaaaaaaaaaaaaaaaaaaaaaaaa" +
-				services~:"abc123" + 
+				services~:"abc123" +
 				owner!:"kubecost"
 			`,
 		},
@@ -191,8 +191,8 @@ func TestShortPrint(t *testing.T) {
 	}{
 		{
 			name: "Empty",
-			input: `              
-			
+			input: `
+
 			`,
 		},
 		{
@@ -270,7 +270,7 @@ func TestShortPrint(t *testing.T) {
 				"job" +
 				container!:"123-abc_foo" +
 				pod!:"aaaaaaaaaaaaaaaaaaaaaaaaa" +
-				services~:"abc123" + 
+				services~:"abc123" +
 				owner!:"kubecost"
 			`,
 		},

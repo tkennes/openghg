@@ -4,7 +4,7 @@ import (
 	"time"
 
 	"github.com/tkennes/openghg/pkg/filter"
-	"github.com/tkennes/openghgkg/log"
+	"github.com/tkennes/openghg/pkg/log"
 )
 
 // Coverage This is a placeholder struct which can be replaced by a more specific implementation later

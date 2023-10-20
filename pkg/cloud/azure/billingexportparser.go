@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/tkennes/openghg/pkg/kubecost"
-	"github.com/tkennes/openghgkg/log"
-	"github.com/tkennes/openghgkg/util/json"
+	"github.com/tkennes/openghg/pkg/log"
+	"github.com/tkennes/openghg/pkg/util/json"
 )
 
 const azureDateLayout = "2006-01-02"

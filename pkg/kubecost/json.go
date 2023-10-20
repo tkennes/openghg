@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/opencost/opencost/pkg/util/json"
+	"github.com/tkennes/openghg/pkg/util/json"
 )
 
 // TODO move everything below to a separate package

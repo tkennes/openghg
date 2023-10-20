@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/tkennes/openghg/pkg/filter21/ast"
-	"github.com/tkennes/openghgkg/log"
+	"github.com/tkennes/openghg/pkg/log"
 )
 
 // StringMapMatcherFactory leverages a single MapFieldMapper[T] to generate instances of

@@ -9,14 +9,14 @@ import (
 	"time"
 
 	"github.com/tkennes/openghg/pkg/cloud"
-	cloudconfig "github.com/tkennes/openghgkg/cloud/config"
+	cloudconfig "github.com/tkennes/openghg/pkg/cloud/config"
 
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/service/athena"
 	"github.com/aws/aws-sdk-go-v2/service/athena/types"
-	"github.com/tkennes/openghgkg/kubecost"
-	"github.com/tkennes/openghgkg/log"
-	"github.com/tkennes/openghgkg/util/stringutil"
+	"github.com/tkennes/openghg/pkg/kubecost"
+	"github.com/tkennes/openghg/pkg/log"
+	"github.com/tkennes/openghg/pkg/util/stringutil"
 )
 
 type AthenaQuerier struct {

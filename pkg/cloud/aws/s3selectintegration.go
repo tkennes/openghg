@@ -9,8 +9,8 @@ import (
 
 	"github.com/aws/aws-sdk-go-v2/service/s3"
 	"github.com/tkennes/openghg/pkg/kubecost"
-	"github.com/tkennes/openghgkg/log"
-	"github.com/tkennes/openghgkg/util/timeutil"
+	"github.com/tkennes/openghg/pkg/log"
+	"github.com/tkennes/openghg/pkg/util/timeutil"
 )
 
 const S3SelectDateLayout = "2006-01-02T15:04:05Z"

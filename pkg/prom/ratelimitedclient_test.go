@@ -12,9 +12,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tkennes/openghg/pkg/util"
-	"github.com/tkennes/openghgkg/util/httputil"
 	prometheus "github.com/prometheus/client_golang/api"
+	"github.com/tkennes/openghg/pkg/util"
+	"github.com/tkennes/openghg/pkg/util/httputil"
 )
 
 // ResponseAndBody is just a test objet used to hold predefined responses

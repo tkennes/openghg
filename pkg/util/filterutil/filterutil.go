@@ -3,18 +3,18 @@ package filterutil
 import (
 	"strings"
 
-	"github.com/tkennes/openghg/pkg/costmodel/clusters"
-	"github.com/tkennes/openghgkg/kubecost"
-	"github.com/tkennes/openghgkg/log"
-	"github.com/tkennes/openghgkg/prom"
-	"github.com/tkennes/openghgkg/util/mapper"
-	"github.com/tkennes/openghgkg/util/typeutil"
+	"github.com/tkennes/openghg/pkg/ghgmodel/clusters"
+	"github.com/tkennes/openghg/pkg/kubecost"
+	"github.com/tkennes/openghg/pkg/log"
+	"github.com/tkennes/openghg/pkg/prom"
+	"github.com/tkennes/openghg/pkg/util/mapper"
+	"github.com/tkennes/openghg/pkg/util/typeutil"
 
-	filter "github.com/tkennes/openghgkg/filter21"
-	afilter "github.com/tkennes/openghgkg/filter21/allocation"
-	assetfilter "github.com/tkennes/openghgkg/filter21/asset"
-	"github.com/tkennes/openghgkg/filter21/ast"
-	// cloudfilter "github.com/tkennes/openghgkg/filter/cloud"
+	filter "github.com/tkennes/openghg/pkg/filter21"
+	afilter "github.com/tkennes/openghg/pkg/filter21/allocation"
+	assetfilter "github.com/tkennes/openghg/pkg/filter21/asset"
+	"github.com/tkennes/openghg/pkg/filter21/ast"
+	// cloudfilter "github.com/tkennes/openghg/pkg/filter/cloud"
 )
 
 // ============================================================================

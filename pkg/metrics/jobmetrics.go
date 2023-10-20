@@ -1,9 +1,9 @@
 package metrics
 
 import (
-	"github.com/opencost/opencost/pkg/clustercache"
 	"github.com/prometheus/client_golang/prometheus"
 	dto "github.com/prometheus/client_model/go"
+	"github.com/tkennes/openghg/pkg/clustercache"
 	batchv1 "k8s.io/api/batch/v1"
 )
 

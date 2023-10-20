@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/tkennes/openghg/pkg/util/json"
-	"github.com/tkennes/openghgkg/util/timeutil"
+	"github.com/tkennes/openghg/pkg/util/timeutil"
 )
 
 func TestS3Integration_GetCloudCost(t *testing.T) {

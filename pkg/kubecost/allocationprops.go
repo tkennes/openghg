@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/tkennes/openghg/pkg/log"
-	"github.com/tkennes/openghgkg/prom"
+	"github.com/tkennes/openghg/pkg/prom"
 )
 
 const (
