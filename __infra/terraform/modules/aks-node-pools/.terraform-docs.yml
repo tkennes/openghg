@@ -1,0 +1,25 @@
+# header-from: header.md
+formatter: md
+
+# .terraform-docs.yml
+content: |-
+  {{ .Header }}
+  ## Contents:
+  - [Modules](#modules)
+  - [Providers](#providers)
+  - [Requirements](#requirements)
+  - [Inputs](#inputs)
+  - [Outputs](#outputs)
+
+  {{ .Modules }}
+
+  {{ .Providers }}
+  
+  {{ .Requirements }}
+
+  {{ .Inputs }}
+
+  {{ .Outputs }}
+
+settings:
+  lockfile: false

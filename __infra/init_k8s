@@ -1,0 +1,7 @@
+#!/bin/bash
+
+az aks get-credentials --resource-group rg-openghg --name aksopenghg --file ~/.env/config/openghg/kubeconfig/openghg --verbose --overwrite-existing
+
+
+
+kg secret -n argocd argocd-secret -o json | jq '.data.["admin.password"]' | tr -d '"' | base64 -d

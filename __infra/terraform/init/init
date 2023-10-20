@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+set -e
+set -o pipefail
+
+readonly SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Load Common Libraries
+. ${SCRIPT_DIR}/bin/common-lib.sh
+
+# Script Parameters
+LOCATION="westeurope"
+RESOURCE_GROUP_NAME="rg-openghg-tier-0"
+STORAGE_ACCOUNT_NAME="stopenghgtf"
+CONTAINER_NAME_DEV="tfstatedev"
+CONTAINER_NAME_PRD="tfstateprd"
+SUBSCRIPTION_NAME="Pay-As-You-Go"
+
+log::action "Logging in to Azure"
+az login
+log::ok "Done"
+
+log::action "Fetch Subscription ID by Name"
+SUBSCRIPTION_ID=$(az account subscription list --query "[?displayName == '${SUBSCRIPTION_NAME}'].id" -o json | jq '.[]' | tr -d '"' | sed -e 's/\/subscriptions\///g' )
+log::ok "Done"
+
+log::action "Setting Subscription to ${SUBSCRIPTION_NAME}"
+az account set -s "${SUBSCRIPTION_ID}"
+log::ok "Done"
+
+log::action "Creating Tier 0 Resource Group"
+az group create \
+    -l "${LOCATION}" \
+    -n "${RESOURCE_GROUP_NAME}"
+log::ok "Done"
+
+log::action "Creating Tier 0 Storage Account"
+az storage account create \
+    --name "${STORAGE_ACCOUNT_NAME}" \
+    --resource-group "${RESOURCE_GROUP_NAME}" \
+    --location "${LOCATION}" \
+    --sku Standard_LRS
+log::ok "Done"
+
+log::action "Creating a Containers in the Storage Account"
+az storage container create \
+    --name "${CONTAINER_NAME_DEV}"\
+    --account-name "${STORAGE_ACCOUNT_NAME}"
+
+az storage container create \
+    --name "${CONTAINER_NAME_PRD}"\
+    --account-name "${STORAGE_ACCOUNT_NAME}"
+log::ok "Done"

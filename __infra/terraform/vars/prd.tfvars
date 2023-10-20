@@ -1,0 +1,3 @@
+identifier = "openghg"
+
+location = "westeurope"
